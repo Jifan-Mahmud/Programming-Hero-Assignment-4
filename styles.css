@@ -375,3 +375,79 @@ body {
     display: none !important;
 }
 
+
+
+@media (max-width: 640px) {
+    .header {
+        padding: 14px 16px;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        padding: 16px 12px 48px;
+    }
+
+    .dashboard {
+        gap: 10px;
+    }
+
+    .stat-card {
+        padding: 14px 16px;
+        border-radius: 10px;
+    }
+
+    .stat-label {
+        font-size: 0.78rem;
+    }
+
+    .stat-count {
+        font-size: 1.4rem;
+    }
+
+    .jobs-section {
+        padding: 16px;
+        border-radius: 10px;
+    }
+
+    .jobs-title {
+        font-size: 1rem;
+    }
+
+    .tab {
+        padding: 8px 14px;
+        font-size: 0.82rem;
+    }
+
+    .job-card {
+        padding: 16px;
+    }
+
+    .company-name {
+        font-size: 0.95rem;
+    }
+
+    .card-meta {
+        gap: 6px;
+    }
+
+    .meta-tag {
+        font-size: 0.72rem;
+        padding: 3px 8px;
+    }
+
+    .card-desc {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        font-size: 0.76rem;
+        padding: 7px 14px;
+    }
+
+    .card-actions {
+        flex-wrap: wrap;
+    }
+}
