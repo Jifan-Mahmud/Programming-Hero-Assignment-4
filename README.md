@@ -26,8 +26,10 @@ It work-
       *Then it will go up to body → html → document
 
 4. What is Event Delegation in JavaScript? Why is it useful?
+
 Ans:-Event Delegation in JavaScript is a pattern where we add an event listener to a parent element, and when an event occurs on a child element of that parent element, it is handled by the parent. That is, there is no need to provide a separate listener on the child element.
 
 5. What is the difference between preventDefault() and stopPropagation() methods?
+
 Ans:- preventDefault() - This prevents the default behavior of the event.
       stopPropagation()-This stops bubbling or capturing of events.
