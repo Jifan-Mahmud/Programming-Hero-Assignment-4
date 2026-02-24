@@ -1,3 +1,79 @@
-h1{
-    color:tomato
+/* !Base*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f5f7fa;
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+/* ===== Header ===== */
+.header {
+    background: #ffffff;
+    padding: 16px 32px;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 20px 60px;
+}
+
+/* Dashboard Stats*/
+.dashboard {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.stat-card {
+    flex: 1;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #64748b;
+}
+
+.stat-count {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.stat-total .stat-count {
+    color: #3b82f6;
+}
+
+.stat-interview .stat-count {
+    color: #10b981;
+}
+
+.stat-rejected .stat-count {
+    color: #ef4444;
 }
