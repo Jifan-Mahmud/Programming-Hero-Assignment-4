@@ -242,3 +242,135 @@ body {
     gap: 10px;
     align-items: center;
 }
+
+
+.btn {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+.btn-interview {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.btn-interview:hover {
+    background: #a7f3d0;
+}
+
+.btn-interview.active {
+    background: #10b981;
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.35);
+}
+
+.btn-rejected {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.btn-rejected:hover {
+    background: #fecaca;
+}
+
+.btn-rejected.active {
+    background: #ef4444;
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.35);
+}
+
+.card-top-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 6px;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-delete:hover {
+    background: #fee2e2;
+}
+
+.btn-delete img {
+    width: 18px;
+    height: 18px;
+}
+
+/*Status badge on card*/
+.status-badge {
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.status-badge.interview {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.status-badge.rejected {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.status-badge.not-applied {
+    background: #e0e7ff;
+    color: #3730a3;
+}
+
+/* Empty State  */
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.empty-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 16px;
+    opacity: 0.6;
+}
+
+.empty-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 6px;
+}
+
+.empty-subtitle {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    max-width: 320px;
+}
+
+.hidden {
+    display: none !important;
+}

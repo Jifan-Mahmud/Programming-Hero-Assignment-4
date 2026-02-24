@@ -88,3 +88,42 @@ const interviewCountEl = document.getElementById("interviewCount");
 const rejectedCountEl = document.getElementById("rejectedCount");
 const jobsCountEl = document.getElementById("jobsCount");
 const tabButtons = document.querySelectorAll(".tab");
+
+function createCardHTML(job) {
+    const interviewActive = job.status === "interview" ? "active" : "";
+    const rejectedActive = job.status === "rejected" ? "active" : "";
+
+    let statusBadge = "";
+    if (job.status === "interview") {
+        statusBadge = `<span class="status-badge interview">Interview</span>`;
+    } else if (job.status === "rejected") {
+        statusBadge = `<span class="status-badge rejected">Rejected</span>`;
+    } else {
+        statusBadge = `<span class="status-badge not-applied">Not Applied</span>`;
+    }
+
+    return `
+    <div class="job-card" data-id="${job.id}">
+      <div class="card-top">
+        <div>
+          <div class="company-name">${job.companyName}</div>
+          <div class="position">${job.position}</div>
+        </div>
+        <button class="btn-delete" onclick="deleteJob(${job.id})" title="Delete job">
+          <img src="assets/Trash.png" alt="Delete" />
+        </button>
+      </div>
+      <div class="card-meta">
+        <span class="meta-tag location">${job.location}</span>
+        <span class="meta-tag type">${job.type}</span>
+        <span class="meta-tag salary">${job.salary}</span>
+      </div>
+      <div class="status-row">${statusBadge}</div>
+      <p class="card-desc">${job.description}</p>
+      <div class="card-actions">
+        <button class="btn btn-interview ${interviewActive}" onclick="setStatus(${job.id}, 'interview')">Interview</button>
+        <button class="btn btn-rejected ${rejectedActive}" onclick="setStatus(${job.id}, 'rejected')">Rejected</button>
+      </div>
+    </div>
+  `;
+}
