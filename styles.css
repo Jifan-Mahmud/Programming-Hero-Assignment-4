@@ -30,13 +30,15 @@ body {
     font-weight: 700;
     color: #0f172a;
 }
+
+/*! main */
 .container {
     max-width: 900px;
     margin: 0 auto;
     padding: 24px 20px 60px;
 }
 
-/* Dashboard Stats*/
+/*! Dashboard Stats*/
 .dashboard {
     display: flex;
     gap: 16px;
@@ -77,3 +79,35 @@ body {
 .stat-rejected .stat-count {
     color: #ef4444;
 }
+
+/*!Available Jobs*/
+.jobs-section {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+}
+
+.jobs-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.jobs-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.jobs-count {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #64748b;
+    background: #f1f5f9;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
